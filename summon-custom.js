@@ -46,7 +46,7 @@ $(document).ready(function() {
 			//move permalink
 			$('.permalinkContainer a:visible').parent().each(function() {
 			  var $linkContainer = $(this);
-			  var html = '<button class="permalinkButton hidden-phone hidden-tablet"><span style="font-size:120%">&#128279;</span><span class="offscreen">Permalink</span></button>';
+			  var html = '<button class="permalinkButton"><span style="font-size:120%">&#128279;</span><span class="offscreen">Permalink</span></button>';
 			  $linkContainer.parents('.documentSummary').find('.topRight').append(html).find('.permalinkButton').click(function(e) {
 				setTimeout(function() {angular.element($linkContainer.children('a')).trigger('click')},0);
 			  });
